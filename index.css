@@ -1,0 +1,79 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.diceplate{
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    height: 420px;
+    margin:30px auto;
+    border-radius: 10px;
+}
+
+.heading{
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.label{
+    font-size: 1.4rem;
+    color: white;
+    background-color: crimson;
+    box-shadow: 2px 2px 15px white;
+    padding: 8px;
+    text-align: center;
+}
+#dicenumber{
+    min-width: 40%;
+    font-size: 1.3rem;
+}
+#rolldice{
+    padding: 6px;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 2px 2px 7px white;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+#rolldice:active{
+    background-color: rgba(255, 255, 255, 0.527);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.295);
+
+}
+#diceimages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+#diceimages img{
+    width: 50px;
+}
+
+@media all and (max-width:550px){
+    .label{
+        padding-left: 30px;
+        padding-right: 30px;
+        max-width: 80%;
+    }
+
+    #dicenumber{
+        max-width: 60%;
+    }
+    .diceplate{
+        height: auto;
+    }
+
+}

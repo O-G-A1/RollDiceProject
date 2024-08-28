@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice Game</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="diceplate">
+        <h1 class="heading">Welcome to Dice Gamble</h1>
+        <label for="Numberofdice" class="label">Number of Dice to be rolled:</label>  
+        <input type="number" name="number" id="dicenumber" max="6" oninput="this.value=Math.min(this.value,6)">
+        <button type="submit" id="rolldice" onclick="rolldice()">Roll Dice</button>
+        <p id="result"></p>
+        <p id="diceimages"></p>  
+        <p class="totaldice">Total:</p>
+    </div>
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
